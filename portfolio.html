@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Portfolio Page</title>
-	<style>
-		table, th, td {
-    	border: 1px solid black;
-    	border-collapse: collapse;}
-		th, td { padding: 5px;}
-</style>
+	<title>Chinmay Das</title>
+	<meta charset="UTF-8" />
+  	<meta name="author" content="Chinmay Das">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
-	<h1>Chinmay's Portfolio</h1>
-	<img src="Photo.jpg" alt="My Photo" width="150px" height="150px">   
-	<p> 
-		<b>Name:</b> Chinmay Das <br />
-		<b>Years of IT Exp:</b> 17 Years <br/>
-		<b>Professional Exp:</b> IT Project &amp Program Management <br/>
-		<b>Contact:</b> chinmay98@gmail.com <br />
-		<b>Position Looking For:</b> IT Senior Manager &amp Product Manager <br />
-		</p>
-	</p>
+	<div class="content" > <!-- About Me ..-->
+		<h1>Chinmay Das</h1> 
+		<img src="Photo.jpg" alt="My Photo" width="150px" height="150px"> <br /> <br />  
 
-	<a href="https://www.linkedin.com/pub/chinmay-das/3a/557/262" target="_blank"> Chinmay's Linked In Page</a>
+  		<p>
+  			Hi, My name is Chinmay Das. I had graduated from National Institute of Technology, Rourkela, India in the year 1998 with a degree in Mechanical Engineering. But, I started my career with Tata Motor India's Information Service Division. So far, I have 17+ years of experience in Information Technology Industry working with various Tier-1 IT providers like Infosys Technologies, Cognizant Technology Solutions, Tata's and a product company, Pursuit Solutions. I have rich experience in IT Project & Program Management delivering solutions in a Global Delivery Model. I have managed 30+ team memebers with 5M+ annual revenue. I have strong experience in Database, Data Warehouse and Web deveopment technologies. Currently I am undergoing Web Development Boot Camp at Rutgers 
+   		
+   			<a href="http://codingbootcamp.rutgers.edu/learn-more/?utm_campaign=TC%20-%20Branded&utm_keyword=rutgers%20coding%20bootcamp&utm_source=google&utm_medium=cpc&k=rutgers%20coding%20bootcamps=google">Rutgers Coding Bootcamp</a>.
+   		</p>
 
-	<h2>Key Professional Experieneces</h2>
-	<p>
-		<ul>
-			<li>Strong Technical Background on Database, Datawarehouse &amp Web Technologies</li>
-			<li>Rich Experience in People Management & Organizational Quality Processes</li>
-			<li>Global Project Delivery</li>
-			<li>Hands on development on Web Technologies</li>
-		</ul>
-		<p>
-			<a href="Myblog.html" target="_blank">More about me in my blog page</a>
+		<a href="https://www.linkedin.com/pub/chinmay-das/3a/557/262" target="_blank"> Chinmay's Linked In Page</a>
+
+	</div>
+	
+	<div class="myPage">
+				<h2>Key Professional Experiences</h2>
+			<ul>
+				<li>Strong Technical Background on Database, Datawarehouse &amp Web Technologies</li>
+				<li>Rich Experience in People Management & Organizational Quality Processes</li>
+				<li>Global Project Delivery</li>
+				<li>Hands on development on Web Technologies</li>
+			</ul>
+
+			<br /><a href="Myblog.html" target="_blank">More about me on my blog page</a>
 		</p>
-	</p>
-	<h3>Educational Qualifications</h3>
-	<table>
+	</div>
+
+	<div class="myPage">
+		<h3>Educational Qualification Details</h3>
+		<table>
 			<tr>
 				<th>Institute</th>
 				<th>Major</th>
@@ -51,14 +51,18 @@
 				<td>Mechanical Eng</td>
 				<td>x.x</td>
 			</tr>
-	</table>
-	<h4>Contact Me...</h4>
-	<form  action="portfolio.html"method="POST">
-		Your Name : <br><input type="text" name="Name"><br>
-		e-mail ID : <br><input type="text" name="e-mail"><br>
-		Request Details : <br><input type="text" name="information"><br>
-		Date : <br><input type="Date"><br>
-		<input type="button" value="Submit form">
-	</form>
+		</table>
+	</div>
+	<div class="input">
+		<h4>Contact Me...</h4>
+		<form  action="portfolio.html"method="POST">
+			Your Name : <input type="text" name="Name" align="right" width="48" height="48"><br />
+			e-mail ID &nbsp&nbsp&nbsp&nbsp: <input type="text" name="e-mail" align="right" width="48" height="48"><br />
+			<!-- Date 			: <input type="Date" align="right" width="48" height="48"><br>
+			Request Details : <input type="text" name="information" align="right" width="48" height="48"><br /> -->
+			<br />
+			<input type="button" value="Submit form">
+		</form>
+	</div>
 </body>
 </html>
