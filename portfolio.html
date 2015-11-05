@@ -4,7 +4,9 @@
 	<title>Chinmay Das</title>
 	<meta charset="UTF-8" />
   	<meta name="author" content="Chinmay Das">
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 </head>
 <body>
 	<div class="content" > <!-- About Me ..-->
@@ -14,10 +16,10 @@
   		<p>
   			Hi, My name is Chinmay Das. I had graduated from National Institute of Technology, Rourkela, India in the year 1998 with a degree in Mechanical Engineering. But, I started my career with Tata Motor India's Information Service Division. So far, I have 17+ years of experience in Information Technology Industry working with various Tier-1 IT providers like Infosys Technologies, Cognizant Technology Solutions, Tata's and a product company, Pursuit Solutions. I have rich experience in IT Project & Program Management delivering solutions in a Global Delivery Model. I have managed 30+ team memebers with 5M+ annual revenue. I have strong experience in Database, Data Warehouse and Web deveopment technologies. Currently I am undergoing Web Development at 
    		
-   			<a href="http://codingbootcamp.rutgers.edu/learn-more/?utm_campaign=TC%20-%20Branded&utm_keyword=rutgers%20coding%20bootcamp&utm_source=google&utm_medium=cpc&k=rutgers%20coding%20bootcamps=google">Rutgers Coding Bootcamp</a>.
+   			<a id="Removelinkline" href="http://codingbootcamp.rutgers.edu/learn-more/?utm_campaign=TC%20-%20Branded&utm_keyword=rutgers%20coding%20bootcamp&utm_source=google&utm_medium=cpc&k=rutgers%20coding%20bootcamps=google">Rutgers Coding Bootcamp</a>.
    		</p>
 
-		<a href="https://www.linkedin.com/pub/chinmay-das/3a/557/262" target="_blank"> Chinmay's Linked In Page</a>
+		<a id="linkedInId" href="https://www.linkedin.com/pub/chinmay-das/3a/557/262" target="_blank"> Chinmay's Linked In Page</a>
 
 	</div>
 	
@@ -30,7 +32,7 @@
 				<li>Hands on development on Web Technologies</li>
 			</ul>
 
-			<br /><a href="Myblog.html" target="_blank">More about me on my blog page</a>
+			<br /><a id="blogId" href="Myblog.html" target="_blank">More about me on my blog page</a>
 		</p>
 	</div>
 
@@ -53,15 +55,28 @@
 			</tr>
 		</table>
 	</div>
-	<div class="input">
+	<div id="contact" class="myPage">
 		<h4>Contact Me...</h4>
 		<form  action="portfolio.html"method="POST">
-			Your Name : <input type="text" name="Name" align="right" width="48" height="48"><br />
-			e-mail ID &nbsp&nbsp&nbsp&nbsp: <input type="text" name="e-mail" align="right" width="48" height="48"><br />
-			<!-- Date 			: <input type="Date" align="right" width="48" height="48"><br>
-			Request Details : <input type="text" name="information" align="right" width="48" height="48"><br /> -->
-			<br />
-			<input type="button" value="Submit form">
+				<table>
+					<tr>
+						<td>Your Name :</td>
+						<td><input type="text" name="Name"></td>
+					</tr>
+					<tr>
+						<td> Your e-mail :</td>
+						<td> <input type="text" name="e-mail"></td>
+					</tr>
+					<tr>
+						<td> Date :</td>
+						<td><input type="Date"></td>
+					</tr>
+					<tr>
+						<td>Request Details :</td>
+						<td><input type="text" name="information"></td>
+					</tr>
+				</table>
+				<input type="button" value="Submit form">
 		</form>
 	</div>
 </body>
