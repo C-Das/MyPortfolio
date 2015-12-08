@@ -7,11 +7,15 @@ $(document).ready(function(){
       type :"GET",
       url : $(this).attr("href"),
       content_security_policy: "default-src 'self' style-src 'self' 'unsafe-inline'", 
-      //content_security_policy: "unsafe-inline", 
       Content_Security_Policy: "script-src 'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='",
+      Content_Security_Policy: "script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'",
+      Content_Security_Policy: "script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'",
+      Content_Security_Policy: "default-src 'none'"; "script-src "
       success : gitCommitApiSuccessHandler
     });
     
+    $(".commitListTable").empty(); // Empty commits table before inserting new records
+
     function gitCommitApiSuccessHandler (commits){
       for (i=0 ; i <commits.length; i++){
         var newCommitRecord = buildCommitRecord(commits[i]);         
@@ -19,13 +23,16 @@ $(document).ready(function(){
     }
 
     function buildCommitRecord (commitsRecords) {
-      var commitSha = commitsRecords.sha;
-      var commitAuthor = commitsRecords.commit.author.name;
-      var commitDate = commitsRecords.commit.author.date;
-      var commitMessage = commitsRecords.message;
+      var commitSha = $("<td>").append(commitsRecords.sha);
+      var commitAuthor = $("<td>").append(commitsRecords.commit.author.name);
+      var commitDate = $("<td>").append(commitsRecords.commit.author.date);
+      var commitMessage = $("<td>").append(commitsRecords.message);
 
-      console.log (commitSha+"author"+commitAuthor+"Date"+commitDate+"Message"+commitMessage);
-    }
+      $(".commitListTable").append ("<tr>")
+        .append(commitSha).append(commitAuthor).append(commitDate).append(commitMessage);
+
+      //console.log (commitSha+"author"+commitAuthor+"Date"+commitDate+"Message"+commitMessage);
+    } //Inserts records into the table based on Repo selected (link clicked)
 
   }); //When repo link is clicked
 
