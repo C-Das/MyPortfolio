@@ -6,11 +6,8 @@ $(document).ready(function(){
     $.ajax({
       type :"GET",
       url : $(this).attr("href"),
-      content_security_policy: "default-src 'self' style-src 'self' 'unsafe-inline'", 
-      Content_Security_Policy: "script-src 'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='",
-      Content_Security_Policy: "script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'",
-      Content_Security_Policy: "script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'",
-      Content_Security_Policy: "default-src 'none'"; "script-src "
+      //content_security_policy: "default-src 'self' style-src 'self' 'unsafe-inline'", 
+      content_security_policy: "script-src 'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='",
       success : gitCommitApiSuccessHandler
     });
     
