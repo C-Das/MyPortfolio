@@ -1,3 +1,16 @@
+
+#headerDiv {
+  background-color: #F2F2F2;
+  text-align: justify;
+}
+
+#topNav {
+  text-align: center;
+}
+#githubNavBar  {
+  ext-align: center;
+}
+/* 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -14,7 +27,7 @@ table, th, td {
 body {
   	font-family: 'Roboto', sans-serif;
   	background-color: #F2F2F2;
-  	text-align: center;
+    text-align: center;
 	}
 p {
   text-align: justify;
@@ -29,21 +42,24 @@ h1 {font-family: 'Open Sans',sans-serif;font-weight: bold;}
 
 h2 {font-family: 'PT Serif',solid}
 
+h3 {color: red}
+
 .myPage {
   margin-left: auto;
   margin-right: auto;
   width: 350px; 
   text-indent: 0;
 }
-.myPage ul li {text-align: 
-  justify;margin: 0;
+.myPage ul li {
+  text-align: left;
+  margin: 0;
   padding: 0;
   list-style-position: inside;
 }
 .myPage th,td {vertical-align: center}
 .labelMargin {margin-right: 10px; }
 
-/* unvisited link */
+End Comments*/
 a:link {
     color: blue;
 }
@@ -56,4 +72,3 @@ a:hover {
 a:active {
     color: blue;
 }
-
